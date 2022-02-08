@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>3D VR Solar System</title>
+    <title>VR Solar System</title>
     <link rel="icon" href="img/icon.png">
 
     <meta charset="utf-8">
@@ -26,13 +26,13 @@
                 <div class="modal-dialog">
                         <div class="modal-content">
                                 <div class="modal-header">
-                                        <h2>Web-Vr 3D Solar System</h2>
+                                        <h2>3D Solar System</h2>
                                         <div class="btnClose" data-dismiss="modal">&times;</div>
                                 </div>
                                 <div class="modal-body">
                                         <ul>
-                                                <li>By Daniel Thomas</li>
-                                                <li>Best experienced on a VR headset</li>
+                                                <li>By Sreedhar S Dhulkhed and Sumith Kumar S</li>
+              
                                         </ul>
                                 </div>
                         </div>
@@ -41,24 +41,24 @@
     <a-scene>
        
         <a-assets>
-            <img id="sunText" src="img/sun.jpg">
-            <img id="mercuryText" src="img/mercury.jpg">
-            <img id="venusText" src="img/venus_atmosphere.jpg">
-            <img id="earthText" src="img/earth.jpg">
-            <img id="earthCloudsText" src="img/earth_clouds.png">
-            <img id="marsText" src="img/mars.jpg">
-            <img id="jupiterText" src="img/jupiter.jpg">
-            <img id="saturnText" src="img/saturn.jpg">
-            <img id="saturnRingText" src="img/saturn.jpg">
-            <img id="uranusText" src="img/uranus.jpg">
-            <img id="neptuneText" src="img/neptune.jpg">
-            <img id="skyText" src="img/stars.jpg">
+            <img id="sunText" crossorigin="anonymous" src="./img/sun.jpg">
+            <img id="mercuryText" crossorigin="anonymous" src="img/mercury.jpg">
+            <img id="venusText" crossorigin="anonymous" src="img/venus_atmosphere.jpg">
+            <img id="earthText" crossorigin="anonymous" src="img/earth.jpg">
+            <img id="earthCloudsText" crossorigin="anonymous" src="img/earth_clouds.png">
+            <img id="marsText" crossorigin="anonymous" src="img/mars.jpg">
+            <img id="jupiterText" crossorigin="anonymous" src="img/jupiter.jpg">
+            <img id="saturnText" crossorigin="anonymous" src="img/saturn.jpg">
+            <img id="saturnRingText" crossorigin="anonymous" src="img/saturn.jpg">
+            <img id="uranusText" crossorigin="anonymous" src="img/uranus.jpg">
+            <img id="neptuneText" crossorigin="anonymous" src="img/neptune.jpg">
+            <img id="skyText" crossorigin="anonymous" src="img/stars.jpg">
         </a-assets>
 
 
-        <script>
+       <!-- <script>
           var inst = alert("This is a Web-Vr 3D Solar System. You can navigate through using your mouse and move around using your front/back/left/right arrow keys. ");
-        </script>
+        </script>-->
 
         <a-sky src="#skyText"></a-sky>
         <a-light type="ambient" color="#222"></a-light>
@@ -66,6 +66,7 @@
 
         <a-entity id="sun" geometry="primitive: sphere; radius:6;" position="-20 1.25 -5" material="shader: flat; src: #sunText" animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 200000">
         </a-entity>
+		
         <a-entity position="-20 1.25 -5" rotation="0 20 0" animation="property: rotation; to: 0 380 0; easing: linear; loop: true; dur: 18000">
             <a-entity id="mercury" geometry="primitive: sphere; radius:.1;" position="14 1.25 -5" material="src: #mercuryText" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 18000">
             </a-entity>
